@@ -1,0 +1,37 @@
+//
+//  Created by David Williames on 15/11/17.
+//  Copyright © 2017 David Williames. All rights reserved.
+//
+
+#import <AppKit/AppKit.h>
+#import <CoreImage/CoreImage.h>
+#import <CoreData/CoreData.h>
+#import <QuartzCore/QuartzCore.h>
+
+#import "MSHeaders.h"
+
+#import "PaddyConstants.h"
+#import "PaddyUtils.h"
+#import "PaddyLayerUtils.h"
+
+#import "PaddySwizzle.h"
+#import "PaddyObserver.h"
+#import "PaddyBenchmark.h"
+#import "PaddyPreferences.h"
+
+#import "PaddyManager.h"
+#import "PaddyDocument.h"
+#import "PaddyDocumentManager.h"
+#import "PaddyClass.h"
+
+#import "PaddyStackGroup.h"
+#import "PaddyModelPadding.h"
+#import "PaddyData.h"
+#import "PaddyCache.h"
+
+#import "PaddyModelAlignment.h"
+#import "PaddyModelOrientation.h"
+#import "PaddyModelPadding.h"
+#import "PaddyModelSizeConditions.h"
+
+#import "PaddyLayoutInstance.h"

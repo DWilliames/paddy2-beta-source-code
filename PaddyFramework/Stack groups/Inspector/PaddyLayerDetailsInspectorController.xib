@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PaddyLayerDetailsInspectorController">
+            <connections>
+                <outlet property="autoResizeCheckbox" destination="Lab-3p-u1g" id="jZ2-xb-zKU"/>
+                <outlet property="dynamicallyRenderCheckbox" destination="ey8-KO-tvw" id="5ES-ar-1p4"/>
+                <outlet property="ignoreCheckbox" destination="YgV-HU-alo" id="YJr-8z-yhM"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY" customClass="PaddySettingsMenuPromptView">
+            <rect key="frame" x="0.0" y="0.0" width="213" height="82"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="12" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m0n-Dn-xYx">
+                    <rect key="frame" x="7" y="11" width="175" height="60"/>
+                    <subviews>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YgV-HU-alo">
+                            <rect key="frame" x="-3" y="45" width="170" height="18"/>
+                            <buttonCell key="cell" type="check" title="Ignore for spacing / padding" bezelStyle="regularSquare" imagePosition="left" controlSize="small" allowsMixedState="YES" inset="2" id="ik8-Xm-0Tj">
+                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                <font key="font" metaFont="smallSystem"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="toggledCheckbox:" target="-2" id="XYe-bB-Z56"/>
+                            </connections>
+                        </button>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Lab-3p-u1g">
+                            <rect key="frame" x="-3" y="21" width="180" height="18"/>
+                            <buttonCell key="cell" type="check" title="Auto-resize based on padding" bezelStyle="regularSquare" imagePosition="left" controlSize="small" allowsMixedState="YES" inset="2" id="M35-N8-rnP">
+                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                <font key="font" metaFont="smallSystem"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="toggledAutoResize:" target="-2" id="k0s-zS-F02"/>
+                            </connections>
+                        </button>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ey8-KO-tvw">
+                            <rect key="frame" x="-3" y="-3" width="155" height="18"/>
+                            <buttonCell key="cell" type="check" title="Dynamic overrides ⚠️👨‍🔬" bezelStyle="regularSquare" imagePosition="left" controlSize="small" allowsMixedState="YES" inset="2" id="d4Q-9w-hIV">
+                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                <font key="font" metaFont="smallSystem"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="toggledDynamicallyRender:" target="-2" id="Iii-DM-Wl3"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <visibilityPriorities>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                    </visibilityPriorities>
+                    <customSpacing>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                    </customSpacing>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="m0n-Dn-xYx" secondAttribute="bottom" constant="11" id="3XD-9t-L9n"/>
+                <constraint firstItem="m0n-Dn-xYx" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="7" id="Ddc-Eo-yeo"/>
+                <constraint firstItem="m0n-Dn-xYx" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="11" id="E1s-RN-HSb"/>
+            </constraints>
+            <point key="canvasLocation" x="83.5" y="57"/>
+        </customView>
+    </objects>
+</document>
