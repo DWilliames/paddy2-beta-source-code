@@ -1,10 +1,17 @@
 # Paddy 2 beta – Source code
 
-This is the source code for my Sketch Plugin, ['Paddy 2 beta.'](https://github.com/DWilliames/paddy2-beta)
+This is the source code for my Sketch Plugin, [Paddy 2 beta.](https://github.com/DWilliames/paddy2-beta)
 
 
 ## ⚠️ Warning
-This code is really gross, and in a state where I was experiementing — it is not clean, well-organised code. Explore at your own risk 😅. I'm a little embarrassed for others to see it; however, I feel it may be helpful and perhaps spark some inspiration for others.
+**This code is really gross**, and in a state where I was experiementing — it is not clean, well-organised code. Explore at your own risk 😅. I'm a little embarrassed for others to see it; however, I feel it may be helpful and perhaps spark some inspiration for others.
+
+
+## Support
+
+If you'd like to support me for all the effort I've put into Paddy, and for providing this source code; all I ask is for you to follow me on Twiiter [@davidwilliames](https://twitter.com/davidwilliames) 🙌
+
+[![Twitter Follow](https://img.shields.io/twitter/follow/davidwilliames.svg?style=social&label=Follow)]()
 
 ---
 
@@ -17,6 +24,7 @@ It does not work properly on Sketch 53 and above.
 
 All of Sketch's internal APIs were dumped into a folder called 'Sketch headers', by using [Class-dump.](http://stevenygard.com/projects/class-dump/)
 
+If a lot of people want a better understanding of the structure within the Xcode project and how Paddy 2 actually works, I will try and provide more detail in the future. In the meantime, I thought I would simply put the source code out there and see if there's any interest in it.
 
 
 ## Running
@@ -35,10 +43,3 @@ If you have trouble running this project, or any questions about how Paddy 2 wor
 
 I have tried to cut my ties with supporting Paddy now, so I can't promise I will respond, but I will try to help out where I can.
 
-
-
-## Support
-
-If you'd like to support me for all the effort I've put into Paddy, and for providing this source code; all I ask is for you to follow me on Twiiter [@davidwilliames](https://twitter.com/davidwilliames) 🙌
-
-[![Twitter Follow](https://img.shields.io/twitter/follow/davidwilliames.svg?style=social&label=Follow)]()
